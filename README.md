@@ -59,7 +59,7 @@ Keep the images (`bear.png`, `frankocean.png`, `background.jpg`, `blonded.jpg`) 
 
 ## Music and image credits
 
-- **Music:** none is included. The demo video uses (add song, artist and license here).
+- **Music:** none is included. The demo video uses (The Britons by Kevibn MAcLeod).
 - This is a non-commercial fan project. *Graduation* and *Blonde* and their artwork belong to their respective owners. The images are used for demonstration only and can be replaced with your own images using the same file names.
 - The Frank Ocean image was made by me.
 
