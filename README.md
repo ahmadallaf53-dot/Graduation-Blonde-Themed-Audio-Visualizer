@@ -4,7 +4,7 @@ An audio visualizer inspired by the albums *Graduation* (Kanye West) and *Blonde
 
 ![Screenshot](screenshot.png)
 
-**Demo video:** (add your YouTube link here)
+**Demo video:** https://youtu.be/s5xd160k-S0
 
 ## Try it (no coding needed)
 
@@ -37,7 +37,7 @@ Everything you see comes from the sound itself, so it works with any song:
 
 ## How it works
 
-- Audio is read in small chunks (1024 samples) either from the microphone with **PyAudio**, or from a file with **soundfile**. For files, the position in the song is taken from the pygame mixer so the visuals match what you hear.
+- Audio is read in small chunks (1024 samples), either from the microphone with **PyAudio** or from a file with **soundfile**. For files, the position in the song is taken from the pygame mixer so the visuals match what you hear.
 - **NumPy** runs an FFT (`np.fft.rfft`) on each chunk to split the sound into frequencies.
 - The frequencies are grouped into 16 bands. The groups get wider towards the high end, so the bass gets more room.
 - Bar heights and the waveform are smoothed by easing each value towards its target, which makes the motion look less jittery.
@@ -56,13 +56,6 @@ python v3.py
 ```
 
 Keep the images (`bear.png`, `frankocean.png`, `background.jpg`, `blonded.jpg`) in the same folder as `v3.py`.
-
-To build the `.exe` yourself:
-
-```
-pip install pyinstaller
-pyinstaller --windowed --name "Graduation Blonde Visualizer" --add-data "bear.png;." --add-data "frankocean.png;." --add-data "background.jpg;." --add-data "blonded.jpg;." v3.py
-```
 
 ## Music and image credits
 
